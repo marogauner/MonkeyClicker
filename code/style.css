@@ -1,0 +1,38 @@
+body{
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#counter {
+    font-size: xx-large;
+}
+
+#getCookieButton {
+    font-size:large;
+    border-radius: 5px;
+}
+
+#centeredDiv {
+    position: absolute;
+    left: 50%;
+}
+.gorilla {
+    width: 100px;
+    left: 50%;
+    right: 50%;
+}
+
+.transformable {
+    animation: transformSize;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1s;
+}
+
+@keyframes transformSize {
+    from{width: 50%;}
+    to{width: 100%}
+}

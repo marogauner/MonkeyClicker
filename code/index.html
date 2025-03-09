@@ -4,23 +4,14 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
     <title>Crazy Monkey Clicker</title>
 </head>
 <body onload="Initialize()">
-    <p id="counter"></p>
-    <button onclick="incrementCounter()" font-size:large; border-radius: 5px;">click here</button>
-    <script>
-        function Initialize() {
-            var counter = 0;
-            document.getElementById("counter").innerHTML = counter;
-        }
-        function incrementCounter() {
-            let counter = document.getElementById("counter").innerHTML;
-            counter = parseInt(counter);
-            counter += 1;
-            document.getElementById("counter").innerHTML = counter;
-        }
-    </script>
+    <div id="centeredDiv">
+        <p id="counter"></p>
+        <button onclick="incrementCounter()"; id="getCookieButton">GET COOKIE</button>
+        <img src="../assets/gorillaCool.jpg" class="transformable">
+    </div>
+    <script defer type="text/javascript" src="main.js"></script>
 </body>
 </html>
