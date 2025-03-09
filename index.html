@@ -2,13 +2,25 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Crazy Monkey Clicker</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
+    <title>Crazy Monkey Clicker</title>
 </head>
-<body>
-    
+<body onload="Initialize()">
+    <p id="counter"></p>
+    <button onclick="incrementCounter()" font-size:large; border-radius: 5px;">click here</button>
+    <script>
+        function Initialize() {
+            var counter = 0;
+            document.getElementById("counter").innerHTML = counter;
+        }
+        function incrementCounter() {
+            let counter = document.getElementById("counter").innerHTML;
+            counter = parseInt(counter);
+            counter += 1;
+            document.getElementById("counter").innerHTML = counter;
+        }
+    </script>
 </body>
 </html>
