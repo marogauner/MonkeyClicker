@@ -6,33 +6,36 @@ body{
     background-size: cover;
 }
 
+
+/* COUNTER */
 #counter {
-    font-size: xx-large;
-}
-
-#getCookieButton {
-    font-size:large;
-    border-radius: 5px;
-}
-
-#centeredDiv {
     position: absolute;
     left: 50%;
+    top: 10%;
+    translate: -50% -50%;
+    background-color: black;
+    font-size:xx-large;
+    color: yellow;
+    border-color: black;
+    border-radius: 10cm;
+    border-width: 1cm;
 }
-.gorilla {
-    width: 100px;
+
+/* BUTTON */
+button{
+    position: absolute;
     left: 50%;
-    right: 50%;
+    top: 40%;
+    translate: -50% -50%;
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid rgb(219, 216, 26);
 }
 
-.transformable {
-    animation: transformSize;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-duration: 1s;
-}
-
-@keyframes transformSize {
-    from{width: 50%;}
-    to{width: 100%}
+.buttonElement {
+    display: inherit;
+    height: inherit;
+    width: inherit;
 }
